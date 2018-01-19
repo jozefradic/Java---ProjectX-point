@@ -2,7 +2,7 @@ package sk.akademiasovy.point;
 
 import java.util.Random;
 
-public class Point {
+public class Point implements Geometry {
     private int x;
     private int y;
 
@@ -38,16 +38,19 @@ public class Point {
             return 0;
     }
 
+    @Override
     public void generateRandomCoord(){
         Random random = new Random();
         this.x=random.nextInt(41)-20;
         this.y=random.nextInt(41)-20;
     }
 
+    @Override
     public double getDistance(){
         return Math.sqrt((x*x)+(y*y));
     }
 
+    @Override
     public void print(){
         System.out.println("Point: ["+x+","+y+"] Q: "+getQuadrant()+ " Dist: "+getDistance());
     }

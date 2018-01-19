@@ -23,6 +23,7 @@ public class Point3D extends Point {
     public double getDistance() {
         return Math.sqrt(getX()*getX()+getY()*getY()+z*z);
     }
+
     @Override
     public void generateRandomCoord(){
         Random random=new Random();
@@ -34,9 +35,13 @@ public class Point3D extends Point {
         return Math.sqrt(Math.pow(getX()-other.getX(),2)+Math.pow(getY()-other.getY(),2)+Math.pow(z-other.getZ(),2));
     }
 
+    @Override
     public void print() {
         System.out.println("Point: ["+getX()+","+getY()+","+z+"] Dist="+getDistance());
     }
 
+    public void test() {
+
+    }
 
 }

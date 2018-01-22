@@ -50,6 +50,23 @@ public class Main {
             ((Point3D)g).print();
         }
 
+        Point bod15=new Point(2,5);
+
+
+
+        Line line1=new Line(bod15, new Point(10, 4));
+        Line line2=new Line(1,3,4,6);
+
+        System.out.println("Length of line1 is "+line1.getLength());
+        line2.getMiddleOfLine().print();
+
+        Triangle triangle1=new Triangle(new Point(5,6), new Point(0,-1), new Point(9,-4));
+
+        System.out.println("Length of line1 is "+line1.getLength());
+        System.out.println("Perimeter of Tria is "+triangle1.getPerimeter());
+        System.out.println("Area of Tria is "+triangle1.getArea());
+
+
 
 
     }

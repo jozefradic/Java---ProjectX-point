@@ -1,5 +1,6 @@
 package sk.akademiasovy.point;
 
+import java.util.Date;
 import java.util.SimpleTimeZone;
 
 public class Main {
@@ -60,11 +61,29 @@ public class Main {
         System.out.println("Length of line1 is "+line1.getLength());
         line2.getMiddleOfLine().print();
 
-        Triangle triangle1=new Triangle(new Point(5,6), new Point(0,-1), new Point(9,-4));
+        Triangle triangle1=new Triangle(new Point(3,3), new Point(4,7), new Point(5,3));
+        Triangle triangle2=new Triangle(new Point(7,7), new Point(20,7), new Point(20,2));
+        Triangle triangle3=new Triangle(new Point(0,0), new Point(0,1), new Point(2,1/2));
+
 
         System.out.println("Length of line1 is "+line1.getLength());
         System.out.println("Perimeter of Tria is "+triangle1.getPerimeter());
         System.out.println("Area of Tria is "+triangle1.getArea());
+        System.out.println("Equilatera is :"+triangle1.isEquilateral());
+        System.out.println("Isosacales is :"+triangle1.isIsosceles());
+        System.out.println("Rectangular is :"+triangle1.isRectangular());
+
+        System.out.println("Equilatera is :"+triangle2.isEquilateral());
+        System.out.println("Isosacales is :"+triangle2.isIsosceles());
+        System.out.println("Rectangular is :"+triangle2.isRectangular());
+
+        System.out.println("Equilatera is :"+triangle3.isEquilateral());
+
+        Date date1=new Date();
+        date1.today2();
+
+
+
 
 
 

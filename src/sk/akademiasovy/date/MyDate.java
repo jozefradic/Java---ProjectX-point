@@ -9,11 +9,13 @@ public class MyDate {
         System.out.println(date);
     }
 
-    public void today2(){
+    public void Today2(){
         Date date =new Date();
-        SimpleDateFormat sdf=new SimpleDateFormat("dd.MMMM-yyyy , hh:mm:ss");
+        SimpleDateFormat sdf=new SimpleDateFormat("dd-MMMM-yyyy , HH:mm:ss , EEEE");
         System.out.println(sdf.format(date));
     }
+
+
 
 
 }

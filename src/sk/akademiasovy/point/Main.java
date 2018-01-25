@@ -1,5 +1,8 @@
 package sk.akademiasovy.point;
 
+import sk.akademiasovy.date.MyDate;
+import sk.akademiasovy.other.MyClass;
+
 import java.util.Date;
 import java.util.SimpleTimeZone;
 
@@ -79,8 +82,19 @@ public class Main {
 
         System.out.println("Equilatera is :"+triangle3.isEquilateral());
 
-        Date date1=new Date();
-        date1.today2();
+        MyDate myDate1=new MyDate();
+        myDate1.Today();
+        myDate1.Today2();
+
+
+        MyClass myClass1=new MyClass();
+        System.out.println(myClass1.formatName("guNmAn"));
+
+        MyClass myClass=new MyClass();
+        System.out.println(myClass.isEmailValid("janko@hrasko"));
+
+
+        //date1.today2();
 
 
 

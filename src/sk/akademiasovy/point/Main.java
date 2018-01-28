@@ -93,6 +93,17 @@ public class Main {
         MyClass myClass=new MyClass();
         System.out.println(myClass.isEmailValid("janko@hrasko"));
 
+        MyClass myClass2=new MyClass();
+        System.out.println(myClass.getGender("881814/8945"));
+
+        MyClass myClass3=new MyClass();
+        System.out.println(myClass.getGender("885614/8945"));
+
+        MyClass myClass4=new MyClass();
+        System.out.println(myClass.getGender("881814/894587"));
+
+
+
 
         //date1.today2();
 
